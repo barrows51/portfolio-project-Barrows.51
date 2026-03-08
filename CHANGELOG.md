@@ -44,5 +44,8 @@ the following form: YYYY.0M.0D.
 ### Updated 2
 
 - Refined component design so that higher-level operations are layered on kernel bit operations
+<<<<<<< Updated upstream
 
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
