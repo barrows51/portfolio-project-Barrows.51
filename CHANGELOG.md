@@ -15,3 +15,17 @@ the following form: YYYY.0M.0D.
 - Designed a DiscreteSignal component.
 - Designed a DigitalRegister component.
 - Designed a FiniteStateMachine component.
+
+## 2026.02.25
+
+### Added 2
+
+- Designed and implemented a proof of concept for the DigitalRegister component.
+- Implemented core kernel methods including setBit, clearBit, getBit, and clear.
+- Added index validation to ensure safe bit access.
+- Included basic Javadoc documentation for all public methods.
+- Created internal representation using a boolean array to model register state.
+
+### Updated
+
+- Refind clearBit method to correctly modify register state
