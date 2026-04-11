@@ -15,8 +15,7 @@ the following form: YYYY.0M.0D.
 - Designed a DiscreteSignal component.
 - Designed a DigitalRegister component.
 - Designed a FiniteStateMachine component.
-<<<<<<< Updated upstream
-=======
+
 
 ## 2026.02.25
 
@@ -32,20 +31,3 @@ the following form: YYYY.0M.0D.
 
 - Refind clearBit method to correctly modify register state
 
-## 2026.03.07
-
-### Added 3
-
-- Designed kernel interface `DigitalRegisterKernel`
-- Designed enhanced interface `DigitalRegister`
-- Added method contracts using OSU design-by-contract style
-- Created hierarchy diagram showing relationship between Standard, Kernel, and Enhanced interfaces
-
-### Updated 2
-
-- Refined component design so that higher-level operations are layered on kernel bit operations
-<<<<<<< Updated upstream
-
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
