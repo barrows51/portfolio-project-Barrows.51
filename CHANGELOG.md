@@ -16,6 +16,7 @@ the following form: YYYY.0M.0D.
 - Designed a DigitalRegister component.
 - Designed a FiniteStateMachine component.
 
+
 ## 2026.02.25
 
 ### Added 2
@@ -29,3 +30,4 @@ the following form: YYYY.0M.0D.
 ### Updated
 
 - Refind clearBit method to correctly modify register state
+
