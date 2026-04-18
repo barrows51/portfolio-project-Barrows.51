@@ -3,6 +3,16 @@
  */
 public final class DigitalRegisterCounterDemo {
     /**
+     * Width of the register in bits.
+     */
+    private static final int REGISTER_WIDTH = 8;
+
+    /**
+     * Number of values to count through.
+     */
+    private static final int COUNT_LIMIT = 16;
+
+    /**
      * Private constructor so this utility class cannot be instantiated.
      */
     private DigitalRegisterCounterDemo() {
@@ -16,13 +26,13 @@ public final class DigitalRegisterCounterDemo {
      */
     public static void main(String[] args) {
 
-        DigitalRegister reg = new DigitalRegister1L(8);
+        DigitalRegister reg = new DigitalRegister1L(REGISTER_WIDTH);
 
         System.out.println("Binary Counter Demo:");
         System.out.println("---------------------");
 
-        // Count from 0 to 15
-        for (int i = 0; i < 16; i++) {
+        // Print current value first, then increment (shows 0 through 15)
+        for (int i = 0; i < COUNT_LIMIT; i++) {
             System.out.println(
                     "Decimal: " + reg.toInt() + " | Binary: " + reg.toString());
             reg.increment();

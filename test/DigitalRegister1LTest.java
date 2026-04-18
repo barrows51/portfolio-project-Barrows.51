@@ -1,4 +1,6 @@
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 
@@ -12,9 +14,8 @@ public class DigitalRegister1LTest {
     @Test
     public void testConstructor() {
         DigitalRegister reg = new DigitalRegister1L(8);
-
         for (int i = 0; i < reg.width(); i++) {
-            assertEquals(0, reg.getBit(i));
+            assertFalse(reg.getBit(i));
         }
     }
 
@@ -24,10 +25,8 @@ public class DigitalRegister1LTest {
     @Test
     public void testSetBit() {
         DigitalRegister reg = new DigitalRegister1L(8);
-
         reg.setBit(3);
-
-        assertEquals(1, reg.getBit(3));
+        assertTrue(reg.getBit(3));
     }
 
     /**
@@ -36,11 +35,9 @@ public class DigitalRegister1LTest {
     @Test
     public void testClearBit() {
         DigitalRegister reg = new DigitalRegister1L(8);
-
         reg.setBit(4);
         reg.clearBit(4);
-
-        assertEquals(0, reg.getBit(4));
+        assertFalse(reg.getBit(4));
     }
 
     /**
@@ -50,9 +47,7 @@ public class DigitalRegister1LTest {
     public void testGetBitNoChange() {
         DigitalRegister reg = new DigitalRegister1L(8);
         DigitalRegister regCopy = new DigitalRegister1L(8);
-
         reg.getBit(2);
-
         assertEquals(regCopy, reg);
     }
 
@@ -62,7 +57,6 @@ public class DigitalRegister1LTest {
     @Test
     public void testWidth() {
         DigitalRegister reg = new DigitalRegister1L(16);
-
         assertEquals(16, reg.width());
     }
 
@@ -72,12 +66,10 @@ public class DigitalRegister1LTest {
     @Test
     public void testMultipleBits() {
         DigitalRegister reg = new DigitalRegister1L(8);
-
         reg.setBit(1);
         reg.setBit(5);
-
-        assertEquals(1, reg.getBit(1));
-        assertEquals(1, reg.getBit(5));
-        assertEquals(0, reg.getBit(0));
+        assertTrue(reg.getBit(1));
+        assertTrue(reg.getBit(5));
+        assertFalse(reg.getBit(0));
     }
 }

@@ -1,8 +1,8 @@
 # Portfolio Part 6: Finishing Touches
 
-- **Name**: <!-- TODO: fill with first and last name (e.g., Brutus Buckeye) and delete this comment -->
-- **Dot Number**: <!-- TODO: fill with OSU dot number (e.g., buckeye.17) and delete this comment -->
-- **Due Date**: <!-- TODO: fill out with due date and time (e.g., 10/17 @ 3:10 PM EST) and delete this comment -->
+- **Name**: William Barrows
+- **Dot Number**: Barrows.51
+- **Due Date**: 4/24/2026
 
 ## Assignment Overview
 
@@ -49,8 +49,6 @@ Many of these additional techniques are somewhat out of the scope of this
 course, but just knowing about them could set you up for long term success.
 
 ## Assignment Checklist
-
-<!-- TODO: browse the checklist then delete this comment -->
 
 To be sure you have completed everything on this assignment, we have littered
 this document with TODO comments. You can browse all of them in VSCode by
@@ -140,8 +138,6 @@ merges, you will need to pull the changes from main into your current branch
 to see them. If you don't like this workflow, you may try following the
 rebase strategies described [here](https://stackoverflow.com/questions/35790561/working-while-waiting-for-pending-pr)
 and [here](https://stackoverflow.com/questions/18021888/continue-working-on-a-git-branch-after-making-a-pull-request).
-
-<!-- TODO: make a new branch from main then delete this comment -->
 
 ## Assignment Tasks
 
@@ -307,18 +303,18 @@ Take some time to fill them out honestly.
 > complete the portfolio project, how much better (or worse) do you think you
 > understand software development and why?
 
-<!-- TODO: discuss -->
+Completing the portfolio project gave me a somewhat better understanding of real-world software development compared to typical coursework. In most class assignments, the structure is already laid out and you fill in the blanks. In this project I had to make genuine design decisions from scratch, like choosing what belongs in the kernel versus what belongs in the secondary layer, and figuring out how those layers communicate. That process felt closer to what a professional engineer might actually do. Some aspects still felt academic, particularly the OSU-specific discipline conventions that don't directly map to industry tools. Having to do the full design of a component from interface to implementation was a valuable experience for me.
 
 > Also, did the portfolio project surface any gaps in your own knowledge of
 > software development. If so, what are those gaps and how did you address them?
 
-<!-- TODO: discuss -->
+Yes, the biggest gap I ran into was understanding how to properly layer kernel and secondary methods. At first, it was not obvious why the separation mattered or how to implement secondary methods exclusively through kernel operations without breaking that abstraction. But, working through it on the DigitalRegister component forced me to think carefully about what the minimal set of operations really needed to be, and then build everything else on top of that. I addressed this gap by tracing through examples from the OSU components library and applying the same pattern to my own design until it made sense.
 
 > Finally, as a part of completing the portfolio project, to what extent has
 > your perspective of software development changed, if at all? In other words,
 > is software development something you still enjoy? If not, why not?
 
-<!-- TODO: discuss -->
+My perspective has shifted in one specific way. I now see a clear parallel between how software components are designed and how hardware is designed. As an ECE student focused on digital logic and computer architecture, I am used to thinking in terms of abstraction layers in hardware: logic gates build into functional units, which build into datapaths and control units. The kernel and secondary method separation in this project followed similar principles. That connection made the project feel more relevant to me than I expected. Software development is not a career path I plan to pursue, but I have a deeper appreciation for the discipline that goes into building well structured software.
 
 > One of the challenges of completing the portfolio project is picking up a lot
 > of skills on your own. Some of these skills are, of course, software skills.
@@ -326,29 +322,30 @@ Take some time to fill them out honestly.
 > this process. Therefore, the first question is what skills did you pick up
 > through this process?
 
-<!-- TODO: discuss -->
+The most significant skill I developed was interface and abstract class design. Before this project, I understood inheritance and interfaces at a surface level from coursework in sw1 & sw2. But designing a full component hierarchy (kernel interface, secondary abstract class, and concrete implementation) gave me a much deeper understanding of how abstraction is used intentionally to separate concerns. I also picked up practical experience with JUnit testing, Javadoc documentation, and using Git for version control on a project I owned from start to finish.
 
 > The follow-up question is: could you rephrase these skills you picked up
 > as bullet points that you could put on a resume? Try it below.
 
-<!-- TODO: discuss -->
+- Designed and implemented a layered Java component using interface abstraction, an abstract class, and a concrete kernel implementation following design-by-contract principles
+- Developed a comprehensive JUnit test suite covering kernel and secondary methods including boundary and state-verification cases
+- Documented a public API using Javadoc with full parameter modes and method contracts
+- Managed project version history using Git branching and pull request workflows on GitHub
 
 > Next, how has working on this project affected your career trajectory?
 > In other words, do you now hate the topic you picked? Or, are you even more
 > interested in it? Both outcomes are valuable to your personal development.
 
-<!-- TODO: discuss -->
+The project actually reinforced my interest in hardware and computer architecture rather than pulling me toward software. Choosing DigitalRegister as my component was intentional. I wanted to model something rooted in how real hardware works. Working through bit manipulation, shift operations, and binary counter behavior in software gave me a new way to think about the hardware I am more interested in designing.
 
 > Finally, consider the skills you've picked up and your current career
 > trajectory. What are some things you could do to continue on your
 > career trajectory? Also, who are some mentors you could contact to help
 > you stay on your path?
 
-<!-- TODO: discuss -->
+To continue toward digital logic and computer architecture, I plan to focus on courses in VLSI design, computer organization, and embedded systems. Outside of coursework, working on FPGA projects would let me apply hardware description languages like VHDL or Verilog to build real digital systems. On the mentorship side, professors in the ECE department who specialize in computer architecture would be valuable contacts, as would engineers at companies like Intel, Qualcomm, etc. that have a presence in the Columbus area and recruit students from OSU. Connecting with graduate students working in computer architecture research could also be a practical next step for me.
 
 ### Changelog
-
-<!-- TODO: update CHANGELOG then delete this comment -->
 
 At the end of every assignment, you should update the
 [CHANGELOG.md](../../CHANGELOG.md) file found in the root of the project folder.
