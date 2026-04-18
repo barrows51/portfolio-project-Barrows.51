@@ -1,4 +1,4 @@
-package components.DigitalRegister;
+package components.digitalregister;
 
 /**
  * {@code DigitalRegister1L} is a kernel implementation of the

@@ -1,4 +1,4 @@
-package components.DigitalRegister;
+package components.digitalregister;
 
 import components.standard.Standard;
 

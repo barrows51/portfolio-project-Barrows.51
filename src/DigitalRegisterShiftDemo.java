@@ -1,5 +1,5 @@
-import components.DigitalRegister.DigitalRegister;
-import components.DigitalRegister.DigitalRegister1L;
+import components.digitalregister.DigitalRegister;
+import components.digitalregister.DigitalRegister1L;
 
 /**
  * Demonstrates shifting and manual bit manipulation.
