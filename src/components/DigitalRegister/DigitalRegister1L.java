@@ -1,3 +1,4 @@
+package components.DigitalRegister;
 
 /**
  * {@code DigitalRegister1L} is a kernel implementation of the

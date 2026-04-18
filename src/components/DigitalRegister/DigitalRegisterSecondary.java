@@ -1,3 +1,5 @@
+package components.DigitalRegister;
+
 /**
  * Secondary (abstract) implementation of DigitalRegister.
  *

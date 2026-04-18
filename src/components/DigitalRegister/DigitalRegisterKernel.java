@@ -1,3 +1,5 @@
+package components.DigitalRegister;
+
 import components.standard.Standard;
 
 /**

@@ -1,3 +1,6 @@
+import components.DigitalRegister.DigitalRegister;
+import components.DigitalRegister.DigitalRegister1L;
+
 /**
  * Demonstrates using DigitalRegister as a binary counter.
  */
