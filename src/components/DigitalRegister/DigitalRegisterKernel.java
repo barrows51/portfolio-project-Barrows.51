@@ -1,3 +1,5 @@
+package components.digitalregister;
+
 import components.standard.Standard;
 
 /**

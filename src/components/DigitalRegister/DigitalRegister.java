@@ -1,3 +1,5 @@
+package components.digitalregister;
+
 /**
  * Enhanced interface for the DigitalRegister component.
  *
