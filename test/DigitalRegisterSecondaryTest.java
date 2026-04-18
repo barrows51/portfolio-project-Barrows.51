@@ -1,5 +1,3 @@
-package components.digitalregister;
-
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
@@ -8,7 +6,6 @@ import org.junit.Test;
  * JUnit tests for secondary methods of DigitalRegister.
  */
 public class DigitalRegisterSecondaryTest {
-
     /**
      * Test increment from zero.
      */

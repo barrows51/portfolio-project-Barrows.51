@@ -1,5 +1,3 @@
-package components.digitalregister;
-
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
@@ -8,7 +6,6 @@ import org.junit.Test;
  * JUnit tests for kernel methods of DigitalRegister1L.
  */
 public class DigitalRegister1LTest {
-
     /**
      * Test constructor initializes all bits to 0.
      */
